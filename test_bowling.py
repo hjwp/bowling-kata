@@ -26,6 +26,6 @@ def test2_spare():
 
 def test_strike():
     result = 'XX 12 34 00 00 00 00 00 00 00 '
-    expected = (10 + 1 + 2) + (1 + 2) + (3 + 4)
+    expected = (10 + 1 + 2 + 3 + 4) + (1 + 2) + (3 + 4)
     assert score(result) == expected
 
