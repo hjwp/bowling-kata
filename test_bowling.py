@@ -13,6 +13,12 @@ def test_misses():
     assert score(result) == 30
 
 
-def test_spare():
+def test1_spare():
     result = '3/ 12 34 00 00 00 00 00 00 00 '
-    assert score(result) == (10 + 1) + (1 + 2) + (3 + 4)
+    expected = (10 + 1) + (1 + 2) + (3 + 4)
+    assert score(result) == expected
+
+def test2_spare():
+    result = '2/ 9/ 12 00 00 00 00 00 00 00 '
+    expected = (10 + 9) + (10 + 1) + (1 + 2)
+    assert score(result) == expected
