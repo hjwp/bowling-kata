@@ -1,5 +1,5 @@
 def score(frames):
-    return sum([
-        int(f[0]) + int(f[1])
-        for f in frames.split()
-    ])
+    return sum(
+        int(roll1) + int(roll2)
+        for roll1, roll2 in frames.split()
+    )

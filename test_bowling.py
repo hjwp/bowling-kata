@@ -6,5 +6,3 @@ def test_no_strikes_no_spares():
     assert score(result) == 70
     result = '35 35 35 35 35 35 35 35 35 35 '
     assert score(result) == 80
-
-
