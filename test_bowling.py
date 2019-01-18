@@ -22,3 +22,10 @@ def test2_spare():
     result = '2/ 9/ 12 00 00 00 00 00 00 00 '
     expected = (10 + 9) + (10 + 1) + (1 + 2)
     assert score(result) == expected
+
+
+def test_strike():
+    result = 'XX 12 34 00 00 00 00 00 00 00 '
+    expected = (10 + 1 + 2) + (1 + 2) + (3 + 4)
+    assert score(result) == expected
+
